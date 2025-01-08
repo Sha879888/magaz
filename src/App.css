@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+  user-select: none;
+}
+
+.MainHeader {
+  height: 52px;
+  background-color: #6c86bc;
+}
+
+.MainHeader .ButtonContainer {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+
+  margin: 50px;
+  margin-top: -50px;
+}
+
+.ButtonContainer button{
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  outline: none;
+  width: 140px;
+  height: 52px;
+  cursor: pointer;
+  font: 1em sans-serif;
+  margin: 50px;
+}
+
+.CatalogContainer .Products {
+  display: flex;              
+  flex-wrap: wrap;           
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.Product button {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: 1em sans-serif;
+  border-radius: 5px;
+}
+
+.CatalogContainer .Product {
+    flex: 1 1 200px;          
+    margin: 10px;             
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px;             
+    text-align: center;        
+    border: 1px solid #ddd;   
+    border-radius: 5px;       
+}
+
+.BasketContainer .Product {
+  flex: 1 1 200px;          
+  margin: 10px;              
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  padding: 10px;             
+  text-align: center;        
+  border: 1px solid #ddd;    
+  border-radius: 5px;        
+}
+
+.BasketContainer .Products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.BasketContainer h2 {
+  border-top: 2px dashed #6c86bc;
+  margin-left: -80%;
+}
+
+.BasketContainer .pay {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  outline: none;
+  width: 140px;
+  height: 52px;
+  cursor: pointer;
+  font: 1em sans-serif;
+  margin: 20px;
+  margin-left: -80%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+button:hover, .pay:hover {
+  transition: background-color 0.2s ease;
+  background-color: #0f234e;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.accountmodal {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.accountmodal input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #3b5998;
+  background-color: #dddddd;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
